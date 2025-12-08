@@ -1,0 +1,342 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  margin: 0;
+  width: 1280px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  background-color: rgb(242, 242, 242, 1);
+}
+
+.container {
+  width: 1200px;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.page-header {
+  background-color: aqua;
+  padding: 0 70px;
+}
+
+.logo-link {
+}
+
+.logo-image {
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item {
+}
+
+.nav-link {
+  display: block;
+  padding: 20px, 16px, 20px, 16px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-user {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.button-login {
+  display: inline-block;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: rgba(117, 97, 87, 1);
+  width: 160px;
+  height: 36px;
+  text-decoration: none;
+}
+
+.main-index {
+}
+
+.welcome {
+  background-color: #b3ece3;
+  background-image: url("../images/divider.svg"),
+    url("../images/welcome-background.jpg");
+  background-size: 1200px auto, cover;
+  background-repeat: no-repeat;
+  background-position: left bottom, center top;
+  padding-top: 51px;
+  padding-bottom: 82px;
+  min-height: 352px;
+}
+
+.welcome-logo {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.slogan {
+  background-color: rgb(224, 245, 242);
+  margin-bottom: 21px;
+  padding: 69px 290px 120px 290px;
+  text-align: center;
+}
+
+.welcome-slogan {
+  margin: 0 0 25px 0;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.slogan-description {
+  margin-bottom: 0 0 69px 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/*.advantages {
+  background-color: rgb(247, 235, 221);
+}*/
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.advantage-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantage-title {
+  margin: 0;
+  font-size: 24px;
+  font: weight 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+.advantage-description {
+  margin: 0;
+  text-align: center;
+}
+
+.advantage-item-light {
+  background-color: rgba(130, 179, 211, 1);
+}
+.advantage-item-light .advantage-title {
+  color: rgb(255, 255, 255);
+}
+
+.advantage-item-light .advantage-description {
+  color: rgb(255, 255, 255);
+}
+
+.advantage-item-dark {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.service-users {
+  width: 1200px;
+}
+
+.service-users-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.service-users-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+.service-users-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-users-item {
+}
+
+.service-user-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.service-user-description {
+}
+
+.hotel-search {
+  text-align: center;
+  background-color: #f5faf8;
+}
+.hotel-search-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+.hotel-search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.button-search {
+  display: inline-block;
+  width: 376px;
+  height: 52px;
+  background-color: rgba(117, 97, 87, 1);
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.subscription {
+  padding: 96px 258px 104px 258px;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-image: url("../images/subscribe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.subscription-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin: 0 0 20px, 0;
+}
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: rgb(255, 255, 255);
+  margin: 0 0 54px, 0;
+}
+
+.subscription-form {
+  display: flex;
+}
+.subscription-field {
+  width: 452px;
+  height: 52px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+.button-subscription {
+  width: 232px;
+  height: 52px;
+  background-color: rgba(130, 179, 211, 1);
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: bold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 40px 70px 30px 70px;
+  width: 1060px;
+}
+.footer-contacts {
+  text-align: center;
+}
+.footer-contacts-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-contacts-item {
+}
+.footer-contacts-link {
+}
+.footer-phone {
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+.htmlacademy {
+}
+.htmlacademy-link {
+  display: block;
+  width: 115px;
+  color: #000000;
+}
+.htmlacademy-logo {
+}
