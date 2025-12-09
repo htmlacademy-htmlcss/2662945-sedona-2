@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 - Студент: [Яна Сереброва](https://up.htmlacademy.ru/htmlcss-individual/2/user/2662945).
-- Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273)
-- Сайт [Мой проект Седона] (https://yanaserebrova.github.io/2662945-sedona-2/)
+- Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273)
+- Сайт [Мой проект Седона](https://yanaserebrova.github.io/2662945-sedona-2/)
 
 ---
 
