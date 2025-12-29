@@ -145,17 +145,17 @@
                     value="9000" placeholder="9000" name="max-price" required>
                     <span class="price-label-title">до</span>
                   </label>
-                </div>
 
                 <div class="range-scale">
-                      <input class="range-min" type="number" name="price-from" value="0" min="0"
+                      <input class="range-min range-toggle" type="number" name="price-from" value="0" min="0"
                         max="10000" step="100" placeholder="0"> 
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </input>
-                      <input class="range-max" type="number" name="price-to" value="0" min="0"
+                      <input class="range-max range-toggle" type="number" name="price-to" value="0" min="0"
                         max="10000" step="100" placeholder="0"> 
                         <span class="visually-hidden">Изменить максимальную цену</span>
                       </input>
+                </div>
                 </div>
 
                  <div class="buttons-wrapper">
@@ -171,18 +171,19 @@
       <!--search results доделать-->
 
       <section class="search-results">
+        <div class="hotels-found">
           <h2 class="search-results-title">Найдено гостиниц: 38</h2>
-          <form class="select-hotel-options" action="https://echo.htmlacademy.ru" 
+          <div class="sorting-hotels">
+            <form class="select-hotel-options" action="https://echo.htmlacademy.ru" 
           method="get">
           <label class="visually-hidden" for="select-options">Сортировка</label>
+
             <select class="search-select" id= "select-options" name="select">
               <option value="cheap" selected>Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
             </form>
-
-            
             <ul class="view-buttons-list" aria-label="Переключение вида карточек">
               <li class="view-buttons-item">
                 <a class="view-link view-link-tile view-link-current" href="catalog.html?view=tile">
@@ -200,9 +201,9 @@
                 </a>
               </li>
             </ul>
-      </section>
-      
-      <section class="accomodation">
+          </div>
+        </div>  
+  
         <ul class="accommodation-list">
           <h3 class="visually-hidden">Список гостиниц</h3>
 
@@ -267,11 +268,11 @@
             <span class="rating-value">Рейтинг: 5,0</span>
           </li>
         </ul>
-
 </section>
         
         <!--pagination доделать-->
-      <nav class="nav-pagination"></nav>
+      <section class="paginator">
+        <nav class="nav-pagination"></nav>
       <h3 class="visually-hidden">Список страниц</h3>
 
         <ul class="pagination-list">
@@ -297,6 +298,8 @@
         </ul>
       </nav>
       </section>
+      
+      
         
       <!--subscribe взять из индекса-->
        <section class="subscription-catalogue">
@@ -310,7 +313,7 @@
               <input
                 class="subscription-field"
                 id="e-mail"
-                placeholder="Ваш e-mail"
+                placeholder="     Ваш e-mail"
                 name="e-mail"
                 required
               />
