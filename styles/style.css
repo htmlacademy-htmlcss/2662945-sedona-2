@@ -283,7 +283,6 @@ body {
 }
 
 .advantages-list {
-  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
@@ -293,7 +292,6 @@ body {
 }
 
 .advantages-item {
-  display: -ms-grid;
   display: grid;
   min-height: 385px;
   background-color: rgba(131, 179, 211, 0.12);
@@ -360,7 +358,6 @@ body {
   text-align: center;
   color: #ffffff;
   max-width: 180px;
-  text-wrap: balance;
 }
 
 .advantage-description::before {
@@ -508,7 +505,6 @@ body {
 
 .button-search:hover {
   background: #615048;
-  ;
 }
 
 .button-search:focus {
@@ -892,7 +888,6 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.filter-input-checkbox:focus + .filter-label::before,
 .filter-input-checkbox:focus + .filter-label::before {
   outline: 3px solid #83b3d3;
 }
@@ -956,7 +951,7 @@ body {
   outline: none;
   background-color: #ffffff;
 }
-.filter-input-radio:hover + .filter-label-radio::before {
+.filter-input-radio:disabled + .filter-label-radio::before {
   color: rgba(255, 255, 255, 0.3);
 }
 .price-filter {
@@ -966,7 +961,6 @@ body {
 }
 
 .range-wrapper {
-  display: -ms-grid;
   display: grid;
   -webkit-column-gap: 2px;
      -moz-column-gap: 2px;
@@ -995,7 +989,7 @@ body {
   padding-top: 12px;
   padding-bottom: 0;
   padding-left: 3px;
-  padding-right: -1px;
+  padding-right: 0;
   width: 100%;
 }
 
@@ -1331,7 +1325,6 @@ body {
   width: 1060px;
   padding: 2px 0 0 0;
   list-style: none;
-  display: -ms-grid;
   display: grid;
   gap: 20px;
   -ms-grid-columns: 340px 20px 340px 20px 340px;
@@ -1342,7 +1335,6 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 19px;
-  display: -ms-grid;
   display: grid;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
@@ -1402,7 +1394,6 @@ body {
 }
 .accommodation-description {
   grid-column: 1/-1;
-   display: -ms-grid;
    display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
@@ -1696,7 +1687,6 @@ body {
 }
 
 .modal-form {
-  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 88px 1fr;
   grid-template-columns: repeat(2, 1fr);
@@ -1705,7 +1695,6 @@ body {
 
 .field-dates {
   position: relative;
-  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 127px 10px 1fr;
   grid-template-columns: 127px 1fr;
