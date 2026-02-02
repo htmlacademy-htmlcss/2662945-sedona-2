@@ -169,7 +169,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.user-link svg {
+.user-link svg{
   display: block;
 }
 
@@ -285,7 +285,6 @@ body {
 .advantages-list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   margin: 0;
   padding: 0;
