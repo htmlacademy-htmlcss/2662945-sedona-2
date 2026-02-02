@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 1 version
-*/
-
 @font-face {
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -315,6 +308,7 @@ body {
   -ms-grid-columns: 1fr 2fr;
   grid-template-columns: 1fr 2fr;
   grid-column: 1 / -1;
+  align-items: stretch;
   color: #ffffff;
   background-color: #82b3d3;
 }
@@ -327,7 +321,7 @@ body {
 .advantage-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding: 103px 85px;
   gap: 30px;
@@ -340,7 +334,6 @@ body {
 .advantage-title {
   margin: 0;
   padding-bottom: 30px;
-  padding: 0 auto;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -398,6 +391,10 @@ body {
 
 .advantage-image {
   display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .service-users {
@@ -648,7 +645,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin: 0;
-  padding: 45px 72px 30px 67px;
+  padding: 45px 70px 30px 67px;
 }
 
 .footer-contacts-list {
@@ -662,7 +659,7 @@ body {
 }
 
 .social-icon {
-  fill: #83b3d3;
+  fill: currentColor;
 }
 
 .footer-contacts-link {
@@ -671,6 +668,7 @@ body {
   align-items: center;
   height: 40px;
   width: 48px;
+  color: #83b3d3;
 }
 
 .footer-contacts-link:hover  {
@@ -679,8 +677,9 @@ body {
 
 .footer-contacts-link:focus {
   color: #68a2ca;
+  border: none;
+  outline: none;
 }
-
 
 .footer-contacts-link:active {
   color: rgba(104, 162, 202, 0.3);
@@ -746,7 +745,7 @@ body {
 }
 
 .breadcrumbs-navigation {
-  margin: 0 0 40px 0;
+  margin: 0 0 42px 0;
 }
 
 .breadcrumbs {
@@ -774,7 +773,11 @@ body {
   height: 15px;
   margin: 10px 5px 0 0;
   padding: 0;
-  color: #ffffff;
+}
+
+.breadcrumbs-link-home svg {
+  display: block;
+  fill: currentColor;
 }
 
 .breadcrumbs-link-home:hover {
@@ -1091,7 +1094,7 @@ body {
   position: relative;
   padding-top: 12px;
   padding-bottom: 0;
-  padding-left: 2px;
+  padding-left: 3px;
   padding-right: 0;
   width: 100%;
 }
@@ -1278,7 +1281,7 @@ body {
 
 .search-results-title {
   margin: 0;
-  padding: 44px 0 46px;
+  padding: 42px 0 46px;
   max-width: 500px;
   font-weight: 700;
   font-size: 30px;
@@ -1296,7 +1299,7 @@ body {
 
 .search-select {
   margin: 0;
-  padding: 12px 70px 14px 20px;
+  padding: 10px 70px 14px 20px;
   color: #333333;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
@@ -1375,7 +1378,7 @@ body {
 }
 
 .view-link-tile {
-  background-image: url("../images/catalogue/icon-view.svg");
+  background-image: url("../images/catalogue/view-icon.svg");
 }
 
 .view-link-cards {
@@ -1713,7 +1716,7 @@ body {
   content: "";
   width: 15px;
   height: 15px;
-  background-image: url("../images/modal/cross.svg");
+  background-image: url("../images/modal/close-cross.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 15px 15px;
@@ -1750,7 +1753,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   font-weight: 700;
-  margin: 0 0 60px 0;
+  margin: 0 0 64px 0;
   padding-right: 164px;
   color: #000000;
 }
@@ -1876,10 +1879,8 @@ body {
   border: none;
   border-radius: 4px;
   background-color: transparent;
-  background-image: url("../images/modal/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   color: #000000;
+  opacity: 0.3;
   cursor: pointer;
 }
 
@@ -1981,10 +1982,8 @@ body {
   border: none;
   border-radius: 4px;
   background-color: transparent;
-  background-image: url("../images/modal/calendar.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  color: rgba(209, 31, 31, 0.3);
+  color: #000000;
+  opacity: 0.3;
   cursor: pointer;
 }
 
@@ -2053,7 +2052,7 @@ body {
 
 .persons-count-input:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
+  outline: none;
 }
 
 .persons-count-input:active {
@@ -2069,6 +2068,7 @@ body {
 
 .minus-button {
   display: flex;
+  position:relative;
   width: 40px;
   justify-content: center;
   align-items: center;
@@ -2076,59 +2076,44 @@ body {
   cursor: pointer;
   border: 3px solid transparent;
   box-sizing: border-box;
+  color: #7561574D;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
-}
-
-.minus-button:hover {
-  outline: none;
   border: none;
-  background-color: #e6e6e6;
 }
-
 .minus-button:focus {
-  outline: none;
-  border: 3px solid #83b3d3;
-  background-color: #e6e6e6;
-}
-
-.minus-button:active {
-  outline: none;
   border: none;
+  outline: none;
 }
-
-.minus-button::before {
+.minus-button::after {
   content: "";
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  background-image: url("../images/modal/minus.svg");
-  background-size: 14px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #83b3d3;
+  border-radius: 4px;
+  opacity: 0;
 }
 
-.minus-button:hover::before {
+.minus-button::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.minus-button:focus::after {
   opacity: 1;
-  fill: #000000;
 }
 
-.minus-button:focus::before {
-  opacity: 1;
-  fill: #000000;
-}
-
-.minus-button:active::before {
+.minus-button:disabled {
   opacity: 0.2;
-}
-
-.minus-button:disabled::before {
-  opacity: 0.5;
   cursor: default;
 }
 
 .plus-button {
   display: flex;
+  position: relative;
   width: 40px;
   justify-content: center;
   align-items: center;
@@ -2137,55 +2122,40 @@ body {
   border: 3px solid transparent;
   box-sizing: border-box;
   outline-offset: -1px;
+  color: #7561574D;
   background-color: #f2f2f2;
   border-radius: 0 4px 4px 0;
 }
-
-.plus-button:hover {
-  outline: none;
-  border: none;
-  background-color: #e6e6e6;
-}
-
 .plus-button:focus {
-  outline: none;
-  border: 3px solid #83b3d3;
-  background-color: #e6e6e6;
-}
-
-.plus-button:active {
-  outline: none;
   border: none;
+  outline: none;
 }
-
-.plus-button::before {
+.plus-button::after {
   content: "";
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.3;
-  background-image: url("../images/modal/plus.svg");
-  background-size: 14px;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #83b3d3;
+  border-radius: 4px;
+  opacity: 0;
 }
 
-.plus-button:hover::before {
+.plus-button::after {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.plus-button:focus::after {
   opacity: 1;
 }
 
-.plus-button:focus::before {
-  opacity: 1;
-  color: #000000;
-}
-
-.plus-button:active::before {
+.plus-button:disabled {
   opacity: 0.2;
-}
-
-.plus-button:disabled::before {
-  opacity: 0.5;
   cursor: default;
 }
+
 
 .tooltip {
   position: relative;
@@ -2299,5 +2269,5 @@ body {
 
 .modal-submit-button:disabled {
   cursor: default;
-  background: rgb(229, 229, 229);
+  background: #e5e5e5;
 }
