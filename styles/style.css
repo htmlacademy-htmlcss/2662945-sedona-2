@@ -1763,7 +1763,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 88px 1fr;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px 88px;
+  gap: 21px 88px;
 }
 
 .field-dates {
