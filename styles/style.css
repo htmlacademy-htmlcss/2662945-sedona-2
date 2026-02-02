@@ -574,26 +574,6 @@ body {
   box-sizing: border-box;
 }
 
-.subscription-field::-webkit-input-placeholder {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.subscription-field::-moz-placeholder {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.subscription-field:-ms-input-placeholder {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.subscription-field::-ms-input-placeholder {
-  font-weight: 400;
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .subscription-field::placeholder {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.6);
@@ -727,12 +707,11 @@ body {
 }
 
 .catalogue-header {
-  /*padding-inline: 70px;*/
   padding: 35px 70px 70px 70px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #a1a0a0;
+  background-color: #8b8b8b;
   color: #ffffff;
   background-image: url("../images/catalogue/blurred-mountains.jpg");
 }
@@ -773,11 +752,7 @@ body {
   height: 15px;
   margin: 10px 5px 0 0;
   padding: 0;
-}
-
-.breadcrumbs-link-home svg {
-  display: block;
-  fill: currentColor;
+  color: #ffffff;
 }
 
 .breadcrumbs-link-home:hover {
@@ -1040,22 +1015,6 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-.min-price-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.min-price-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.min-price-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.min-price-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 .min-price-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
@@ -1113,27 +1072,6 @@ body {
   width: 143px;
   border-radius: 0 4px 4px 0;
 }
-
-
-.max-price-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.max-price-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.max-price-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.max-price-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 
 .max-price-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -1783,25 +1721,6 @@ body {
   border: none;
 }
 
-.field-dates > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.field-dates > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.field-dates > *:nth-child(3) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-}
-
-.field-dates > *:nth-child(4) {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-}
 
 .check-in-label {
   grid-row: 1 / -1;
@@ -1829,21 +1748,6 @@ body {
   border-radius: 4px;
 }
 
-.check-in-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.check-in-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.check-in-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.check-in-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
 
 .check-in-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
@@ -1930,27 +1834,6 @@ body {
   border: none;
   border-radius: 4px;
 }
-
-
-.check-out-input::-webkit-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.check-out-input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.check-out-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-
-.check-out-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
 
 .check-out-input::placeholder {
   color: rgba(0, 0, 0, 0.6);
