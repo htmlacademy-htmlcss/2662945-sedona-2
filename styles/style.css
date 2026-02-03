@@ -631,7 +631,7 @@ body {
 }
 
 .social-icon {
-  color: currentColor;
+  fill: currentColor;
 }
 
 .footer-contacts-link {
