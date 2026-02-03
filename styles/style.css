@@ -880,9 +880,13 @@ body {
   display: block;
 }
 
-.filter-input-checkbox:hover + .filter-label::before {
-  color: rgba(255, 255, 255, 0.6);
+.filter-label:hover {
+ color: rgba(255, 255, 255, 0.6);
 }
+
+.filter-label:hover::before {
+  background-color: rgba(255, 255, 255, 0.6);
+} 
 
 .filter-input-checkbox:focus + .filter-label::before {
   outline: 3px solid #83b3d3;
@@ -894,7 +898,7 @@ body {
 }
 
 .filter-input-checkbox:disabled + .filter-label::before {
-  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .filter-label-radio {
   display: inline-block;
@@ -934,8 +938,12 @@ body {
   display: block;
 }
 
-.filter-input-radio:hover + .filter-label-radio::before {
+.filter-label-radio:hover  {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.filter-label-radio:hover::before {
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .filter-input-radio:focus + .filter-label-radio::before,
@@ -948,7 +956,7 @@ body {
   background-color: #ffffff;
 }
 .filter-input-radio:disabled + .filter-label-radio::before {
-  color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .price-filter {
   display: flex;
