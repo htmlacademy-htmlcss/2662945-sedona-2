@@ -315,7 +315,7 @@ body {
 .advantage-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   padding: 103px 85px;
   gap: 30px;
@@ -331,7 +331,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  width: 175px;
+  max-width: 180px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -360,10 +360,11 @@ body {
 .advantage-description::before {
   content: "";
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
   height: 2px;
-  left: 85px;
-  right: 86px;
-  top: -31px;
+  top: -33px;
 }
 
 .advantage-with-image .advantage-description::before {
@@ -1189,11 +1190,13 @@ body {
 
 .reset-button:active {
   color: rgba(255, 255, 255, 0.3);
+  outline: none;
 }
 
 .reset-button:disabled {
   cursor: default;
-  background: #e5e5e5;
+  background: transparent;
+  opacity: 0.1;
 }
 
 .search-results {
@@ -1307,7 +1310,7 @@ body {
 }
 
 .view-link-tile {
-  background-image: url("../images/catalogue/view-icon.svg");
+  background-image: url("../images/catalogue/icon-view.svg");
 }
 
 .view-link-cards {
@@ -1553,16 +1556,6 @@ body {
   padding: 8px 8px;
 }
 
-.pagination-link:hover,
-.pagination-link:focus {
-  background-color: #68a2ca;
-  outline: none;
-}
-
-.pagination-link:active {
-  background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .pagination-link-current {
   background-color: #f2f2f2;
@@ -1666,7 +1659,8 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   margin: 0 0 64px 0;
-  padding-right: 164px;
+  padding-right: 0;
+  max-width: 460px;
   color: #000000;
 }
 
@@ -2047,7 +2041,7 @@ body {
           transform: translateX(-50%);
   width: 256px;
   margin-top: 14px;
-  padding: 15px 18px 18px 22px;
+  padding: 25px 18px 18px 22px;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -2059,7 +2053,6 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-
 }
 
 .children-label {
@@ -2086,7 +2079,7 @@ body {
 }
 
 .tooltip:hover .tooltip-text,
-.tooltip:focus .tooltip-text {
+.tooltip-button:focus + .tooltip-text  {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
